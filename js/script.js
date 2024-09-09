@@ -15,6 +15,7 @@ createApp({
         getTodoData() {
             axios.get(this.url).then((data) => {
                 console.log(data.data);
+                this.todoData = data.data;
             });
         }
     },

@@ -21,7 +21,17 @@
 <body>
     <!-- mount -->
      <div id="app">
-        
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ol>
+                        <li v-for="item, index in todoData" key="index">
+                            {{ item.name }}
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
      </div>
     
     <!-- script.js -->
