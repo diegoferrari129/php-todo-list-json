@@ -29,6 +29,7 @@
         ]
     ];
 
-    var_dump(json_encode($todoData));
+    header('content-type: application/json');
+    echo json_encode($todoData);
 
 ?>
