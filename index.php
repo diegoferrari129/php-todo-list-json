@@ -19,7 +19,11 @@
 
 </head>
 <body>
+    <!-- mount -->
+     <div id="app">
+        
+     </div>
     
     <!-- script.js -->
-</body>
+    <script src="./js/script.js"></script>
 </html>
