@@ -1,32 +1,34 @@
 <?php
 
-$todoData = [
-    [ 
-        "id" => 1, 
-        "done" => true,
-        "name" => "HTML" 
-    ],
-    [ 
-        "id" => 2, 
-        "done" => false, 
-        "name" => "CSS" 
-    
-    ],
-    [ 
-        "id" => 3, 
-        "done" => true, 
-        "name" => "Responsive design" 
-    ],
-    [ 
-        "id" => 4, 
-        "done" => false, 
-        "name" => "JavaScript" 
-    ],
-    [ 
-        "id" => 5, 
-        "done" => true, 
-        "name" => "PHP" 
-    ]
-];
+    $todoData = [
+        [ 
+            "id" => 1, 
+            "done" => true,
+            "name" => "HTML" 
+        ],
+        [ 
+            "id" => 2, 
+            "done" => false, 
+            "name" => "CSS" 
+        
+        ],
+        [ 
+            "id" => 3, 
+            "done" => true, 
+            "name" => "Responsive design" 
+        ],
+        [ 
+            "id" => 4, 
+            "done" => false, 
+            "name" => "JavaScript" 
+        ],
+        [ 
+            "id" => 5, 
+            "done" => true, 
+            "name" => "PHP"  
+        ]
+    ];
+
+    var_dump(json_encode($todoData));
 
 ?>
