@@ -17,7 +17,16 @@ createApp({
                 console.log(data.data);
                 this.todoData = data.data;
             });
-        }
+        },
+
+        toggleItem(item) {
+            // if (item.done === false) {
+            //     item.done = true
+            // }
+            // else if (item.done === true)
+            //     item.done = false
+            item.done = !item.done
+        },
     },
 
     mounted() {
