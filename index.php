@@ -28,8 +28,8 @@
             <div class="row">
                 <div class="col-12">
                     <ol>
-                        <li v-for="item, index in todoData" key="index" :class="item.done ? 'done' : ''" @click="toggleItem(item)">
-                            {{ item.name }}
+                        <li v-for="task, index in todoData" key="index" :class="task.done ? 'done' : ''" @click="getTaskDone(task)">
+                            {{ task.name }}
                         </li>
                     </ol>
                 </div>

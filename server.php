@@ -1,35 +1,11 @@
 <?php
 
-    $todoData = [
-        [ 
-            "id" => 1, 
-            "done" => true,
-            "name" => "HTML" 
-        ],
-        [ 
-            "id" => 2, 
-            "done" => false, 
-            "name" => "CSS" 
-        
-        ],
-        [ 
-            "id" => 3, 
-            "done" => true, 
-            "name" => "Responsive design" 
-        ],
-        [ 
-            "id" => 4, 
-            "done" => false, 
-            "name" => "JavaScript" 
-        ],
-        [ 
-            "id" => 5, 
-            "done" => true, 
-            "name" => "PHP"  
-        ]
-    ];
+    $string = file_get_contents('./data/todo-list.json');
+
+    $todoData = json_decode($string);
 
     header('content-type: application/json');
-    echo json_encode($todoData);
+    
+    echo $string;
 
 ?>
